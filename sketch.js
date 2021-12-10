@@ -60,12 +60,12 @@ function setup() {
   if(isMobile){
     canW= displayWidth;
     canH= displayHeight;
-    createCanvas(canW+80,canW);
+    createCanvas(canW+80,canH);
   }
   else{
     canW= windowWidth;
     canH= windowHeight;
-    createCanvas(canW,canW);
+    createCanvas(canW,canH);
   }
 
  
@@ -131,7 +131,7 @@ function setup() {
 function draw() 
 {
   background(51);
-  image(bg_img,0,0,canW+80,canW);
+  image(bg_img,0,0,canW+80,canH);
 
   push();
   imageMode(CENTER);
